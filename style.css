@@ -1,0 +1,63 @@
+/* Eléments principaux de la page */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body{
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 1em;
+    background-color:#AAD7D2;
+}
+
+#main{
+    width: 600px;
+    margin: auto;
+    background-color:#FAFAFA;
+    padding: 30px 80px 30px 80px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.labels{
+    display:inline-block;
+    width: 40%;
+    text-align:right;
+    vertical-align:top;
+
+}
+
+.rightTab{
+    display:inline-block;
+    width:50%;
+    vertical-align:middle;
+    text-align:left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+
+textarea{
+    width:250px;
+    margin-left:4px;
+}
+
+button{
+    display:block;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color:#2A9ABF;
+    font-family:Arial;
+    font-size:1em;
+    color:white;
+    outline:none;
+
+}

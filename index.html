@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/> 
+        <link rel="stylesheet" href="style.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="main"> 
+        <div id="bloc_form">
+            <form id="survey-form">
+            <p id="description">Let us know how we can improve freeCodeCamp</p>
+            <div id="survey-form">
+                <div class="labels">
+                <label for="name" id="name-label">Name :</label></div>
+                <div class="rightTab"><input type="text" id="name" name="name" placeholder="name" required></div>
+                <div class="labels"><label for="email" id="email-label">Email :</label></div> 
+                <div class="rightTab"><input type="email" id="email" name="email" required placeholder="example@email.com"
+                    pattern=".+@xxx.com" title="doit être une adresse email valide"></div>
+                <div class="labels"><label for="age" id="number-label">Age :</label></div>
+                <div class="rightTab"><input type="number" id="number" name="number" min="0" max="125" placeholder="number"></div>
+                <p>
+                      <div class="labels"><label for="position">Which option best describes your current role?</label></div>
+                      
+                      <div class="rightTab"><select id="dropdown" name="role">
+                      <option value="student">Student</option>
+                      <option value="fulljob">Full Time Job</option>
+                      <option value="fulllearner">Full Time Learner</option>
+                      <option value="nottosay">Prefer not to say</option>
+                      <option value="other">Other</option>
+                    </select></div>
+                  </p>
+                  <div class="labels"><label for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label></div>
+                  <div class="rightTab"><input type="radio" name="recommend" value="Male" checked> Male<br>
+                        <input type="radio" name="recommend" value="Definitely"> Definitely<br>
+                        <input type="radio" name="recommend"  value="Maybe"> Maybe<br>
+                        <input type="radio" name="recommend"  value="Not sure"> Not sure<br></div>
+                    </p>
+                <p>
+                    <div class="labels"><label for="FCC">What do you like most in FCC:</label></div>
+                      <div class="rightTab"><select id="fcc" name="fcc"><option value="challenges">Challenges</option>
+                      <option value="projects">Projects</option>
+                      <option value="community">Community</option>
+                      <option value="open source">Open Source</option>
+                    </select></div>
+                  </p>
+                  <p><div class="labels"><label for="improvements">Things that should be improved in the future (Check all that apply):</label> </div>
+                    <div class="rightTab"><input type="checkbox" name="improvements"  value="Front-end Projects"> Front-end Projects<br>
+                                          <input type="checkbox" name="improvements"  value="Back-end Projects"> Back-end Projects<br>
+                                          <input type="checkbox" name="improvements"  value="Data Visualization"> Data Visualization<br>
+                                          <input type="checkbox" name="improvements"  value="Challenges"> Challenges<br>
+                                          <input type="checkbox" name="improvements"  value="Open Source Community"> Open Source Community<br>
+                                          <input type="checkbox" name="improvements"  value="Gitter help rooms"> Gitter help rooms<br>
+                                          <input type="checkbox" name="improvements"  value="Videos"> Videos<br>
+                                          <input type="checkbox" name="improvements"  value="City Meetups"> City Meetups<br>
+                                          <input type="checkbox" name="improvements"  value="Wiki"> Wiki<br>
+                                          <input type="checkbox" name="improvements"  value="Forum"> Forum<br>
+                                          <input type="checkbox" name="improvements"  value="Additional Courses"> Back-end Projects</div>
+                </p>
+                <div class="labels"><label for="comments">Any Comments or Suggestions</label></div>
+                <div class="rightTab"><textarea rows="4" cols="40" name="comment">Enter your comment here...</textarea></div>
+                <p><button type="submit" id="submit">Submit</button></p>
+            </form>
+            </div>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>      
+    </body>
+</html>
